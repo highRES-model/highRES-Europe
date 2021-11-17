@@ -6,14 +6,12 @@ Welcome to the repository for the European version of the high temporal and spat
 
 highRES is written in GAMS and its objective is to minimise power system investment and operational costs to meet hourly demand, subject to a number of system constraints. The transmission grid is represented using a linear transport model. To realistically model variable renewable supply, the model uses spatially and temporally-detailed renewable generation time series that are based on weather data.
 
-The current working version of highRES-Europe including all GAMS code and necessary text files/GDX format input data for a 8760 hour model run.
-
 ### **How to run the model**
 
 This repository contains all GAMS code and necessary text files/GDX format input data for a 8760 hour model run. To execute the code:
 
-1. GAMS must be installed and licensed. This version was tested with GAMS version 27.2.0.
-2. Open highres.gms, the main driving script for the model, in the GAMS IDE and hit run.
+1. GAMS must be installed and licensed. This version was tested/developed with GAMS version 27.2.0.
+2. All files must be in the same directory and then open highres.gms, the main driving script for the model, in the GAMS IDE and hit run.
 3. Full model outputs are written into the file "hR_dev.gdx" which is written into the same directory as the code/data and can be viewed using the GAMS IDE. Outputs include: the capacity of generation, storage and transmission by node, the hourly operation of these assets (including flows into and out of storage plus the storage level and total system costs.)
 4. The GDX output file can be converted to SQLite using the command line utility gdx2sqlite which is distributed with GAMS. From the command line do "gdx2sqlite -i hR_dev.gdx -o hR_dev.db -fast". This SQLite database can then be easily read by Python using, e.g., Pandas.
 
