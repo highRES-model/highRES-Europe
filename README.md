@@ -23,3 +23,5 @@ ERA5 for on and offshore wind capacity factors and runoff data (https://www.ecmw
 CMSAF-SARAH2 for solar PV capacity factors (https://wui.cmsaf.eu/safira/action/viewDoiDetails?acronym=SARAH_V002)  
 Demand data is from ENTSO-E for the year 2013  
 Cost and technical data is taken from UKTM (https://www.ucl.ac.uk/energy-models/models/uk-times) with data from the JRC report "Cost development of low carbon energy technologies: Scenario-based cost trajectories to 2050" (https://publications.jrc.ec.europa.eu/repository/handle/JRC109894) used to update some areas. 
+Data on run-of-river, reservoir and pumped hydro power capacities is taken from https://transparency.entsoe.eu/, https://www.entsoe.eu/data/power-stats/ and https://github.com/energy-modelling-toolkit/hydro-power-database  
+Energy storage capacities for reservoir and pumped storage are taken from Schlachtberger et al. (2017) and Geth et al. (2015) respectively (see https://doi.org/10.1016/j.energy.2017.06.004 and https://doi.org/10.1016/j.rser.2015.07.145).  
